@@ -1,0 +1,201 @@
+.footer {
+  background-color: var(--dark-blue);
+  padding: 80px 40px;
+}
+
+.footer-container {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+/* Левая часть */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-left: 180px;
+}
+
+.footer-logo {
+  font-weight: 800;
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  color: var(--white);
+  align-self: flex-start;
+}
+
+.footer-icons {
+  width: auto;
+  height: 110px;
+  filter: brightness(0) invert(1);
+  align-self: flex-start;
+  object-fit: contain;
+}
+
+/* Правая часть */
+.footer-right {
+  display: flex;
+  gap: 80px;
+  flex-wrap: wrap;
+  padding-right: 150px;  /* ЕЩЕ БОЛЬШЕ ОТСТУП СПРАВА - ЛЕВЕЕ (было 50px) */
+}
+
+/* Блок Поддержка */
+.footer-support {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.support-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 0;
+  max-width: 1600px;
+  width: 100%;
+  letter-spacing: 1px;
+}
+
+.support-phone {
+  font-weight: 200;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  color: var(--white);
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+/* Блок Соцсети */
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 0;
+  max-width: 1600px;
+  width: 100%;
+  letter-spacing: 1px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.social-links span {
+  font-weight: 200;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  color: var(--white);
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.social-links span:hover {
+  opacity: 0.8;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .footer-right {
+    gap: 50px;
+    padding-right: 80px;  /* на планшетах */
+  }
+  
+  .support-title,
+  .social-title {
+    font-size: 2rem;
+  }
+  
+  .support-phone,
+  .social-links span {
+    font-size: 1.6rem;
+  }
+  
+  .footer-left {
+    padding-left: 100px;
+  }
+  
+  .footer-logo {
+    font-size: 3rem;
+  }
+  
+  .footer-icons {
+    height: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 50px 20px;
+  }
+  
+  .footer-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .footer-left {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+  }
+  
+  .footer-logo {
+    font-size: 2.8rem;
+    align-self: center;
+  }
+  
+  .footer-icons {
+    height: 80px;
+    align-self: center;
+  }
+  
+  .footer-right {
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    padding-right: 0;  /* на мобилке убираем */
+  }
+  
+  .footer-support,
+  .footer-social {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .support-title,
+  .social-title {
+    font-size: 1.8rem;
+  }
+  
+  .support-phone,
+  .social-links span {
+    font-size: 1.4rem;
+    white-space: normal;
+  }
+  
+  .social-links {
+    align-items: center;
+  }
+}

@@ -1,0 +1,84 @@
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 50px;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.3), transparent);
+  pointer-events: none;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin-bottom: 100px;
+}
+
+.hero-text p {
+  color: #000000;
+  font-weight: 200;
+  font-size: 2.8rem;
+  text-shadow: none;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.btn-primary {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: 18px 120px;
+  border-radius: 50px;
+  font-size: 1.8rem;  /* БОЛЬШЕ (было 1.4rem) */
+  font-weight: 800;
+  box-shadow: 0 4px 15px rgba(3, 17, 108, 0.3);
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  width: auto;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(3, 17, 108, 0.5);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 30px 20px;
+  }
+  
+  .hero-content {
+    margin-bottom: 50px;
+  }
+  
+  .hero-text p {
+    font-size: 1.8rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  .btn-primary {
+    padding: 15px 60px;
+    font-size: 1.5rem;  /* на мобилке тоже побольше */
+    font-weight: 700;
+  }
+}

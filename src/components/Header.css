@@ -1,0 +1,75 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark-blue);
+  padding: 20px 50px;
+  color: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.burger-menu span {
+  width: 30px;
+  height: 4px;
+  background-color: var(--white);
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.header-right {
+  display: flex;
+  gap: 35px;  /* расстояние между иконками увеличил */
+  align-items: center;
+}
+
+.header-right img {
+  width: 32px;  /* БОЛЬШЕ (было 24px) */
+  height: 32px;  /* БОЛЬШЕ (было 24px) */
+  cursor: pointer;
+  transition: opacity 0.2s;
+  object-fit: contain;  /* чтобы картинка не искажалась */
+}
+
+.header-right img:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 25px;
+  }
+  
+  .header-right {
+    gap: 25px;
+  }
+  
+  .header-right img {
+    width: 28px;  /* на мобилке тоже побольше */
+    height: 28px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+}

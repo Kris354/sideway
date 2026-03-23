@@ -1,0 +1,51 @@
+.about {
+  background-color: var(--white);
+  padding: 80px 40px;
+}
+
+/* Заголовок как в Новинках и Популярном */
+.about h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 40px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* Контейнер для текста */
+.about-text {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* Стиль для каждого абзаца */
+.about-text p {
+  font-weight: 200;
+  font-size: 2.2rem;  /* ЧУТЬ МЕНЬШЕ (было 2.8rem) */
+  line-height: 1.2;
+  color: #000000;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 50px 20px;
+  }
+  
+  .about h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .about-text p {
+    font-size: 1.5rem;  /* НА МОБИЛКЕ ТОЖЕ ЧУТЬ МЕНЬШЕ (было 1.8rem) */
+    line-height: 1.3;
+  }
+}
