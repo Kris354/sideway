@@ -1,5 +1,18 @@
 # Одностраничный лендинг скейтшопа SIDEWAY
-Проект представляет собой современный лендинг для скейтшопа, разработанный на React. Сайт выполнен в современном спортивном и минималистичном стиле с использованием темно-синего, черного и белого цветов. Задача сайта показать товары, рассказать о компании и побудить польователя перейти в каталог
+Проект представляет собой современный лендинг для скейтшопа, разработанный на React. Сайт выполнен в современном спортивном и минималистичном стиле с использованием темно-синего, черного и белого цветов. Задача сайта показать товары, рассказать о компании и побудить польователя перейти в каталог.
+
+## Структура проекта в GitHub
+Ветка main
+  - app
+Ветка task
+  - task.md - Задачи проекта
+  - terms.md - ТЗ
+  - папка desidn - Прототипы сайта
+  - review.md - Оценка проекта
+  - optimize.md - Оптимизация сайта
+  - grow.md - предложения для улучшения проекта
+  - prstrategy.md - PR Стратегия продвижения
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Запуск проекта
@@ -67,15 +80,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-## Структура проекта в GitHub
-Ветка main
-  - app
-Ветка task
-  - task.md - Задачи проекта
-  - terms.md - ТЗ
-  - папка desidn - Прототипы сайта
-  - review.md - Оценка проекта
-  - optimize.md - Оптимизация сайта
-  - grow.md - предложения для улучшения проекта
-  - prstrategy.md - PR Стратегия продвижения
