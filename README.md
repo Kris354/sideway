@@ -69,9 +69,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 ## Структура проекта в GitHub
-- Ветка main
+Ветка main
   - app
-- Ветка task
+Ветка task
   - task.md - Задачи проекта
   - terms.md - ТЗ
   - папка desidn - Прототипы сайта
